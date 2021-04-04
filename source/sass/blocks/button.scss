@@ -1,0 +1,12 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 256px;
+  height: 48px;
+  border: 2px solid var(--basic-text);
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-text);
+  text-transform: uppercase;
+}
