@@ -20,6 +20,7 @@
   line-height: 30px;
   font-weight: 400;
   margin-bottom: 33px;
+  color: var(--basic-text);
 }
 
 .reviews__autor-nume {
@@ -62,7 +63,7 @@
     position: absolute;
     top: -13px;
     left: 90px;
-    background-color: var(--basic-border);;
+    background-color: var(--basic-border);
     width: 1px;
     height: 50px;
   }
