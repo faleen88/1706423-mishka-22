@@ -12,26 +12,9 @@
 
 .main-nav__link {
   color: var(--basic-black);
+}
 
-  &--search-site::before {
-    content: "";
-    position: absolute;
-    top: 31px;
-    left: 32px;
-    background-image: url("../../img/search.svg.svg");
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 18px;
-  }
-
-  &--basket::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    background-image: url("../../img/cart.svg.svg");
-    background-repeat: no-repeat;
-    width: 21px;
-    height: 18px;
-  }
+.main-nav__icon {
+  position: absolute;
+  left: 30px;
 }

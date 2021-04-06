@@ -1,0 +1,17 @@
+.filter-type {
+  margin-bottom: 31px;
+}
+
+.filter-type__title {
+  margin-bottom: 31px;
+}
+
+.filter-type__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-type__item:not(:last-child) {
+  margin-bottom: 13px;
+}

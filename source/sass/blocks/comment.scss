@@ -1,0 +1,23 @@
+.comment {
+  margin-bottom: 15px;
+}
+
+.comment__title {
+  margin-bottom: 22px;
+}
+
+.comment__text {
+  border: 2px solid var(--basic-black);
+  width: 256px;
+  height: 138px;
+  resize: none;
+  font-family: inherit;
+  padding: 0;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    width: 200px;
+    padding: 17px;
+  }
+}

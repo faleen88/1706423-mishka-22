@@ -1,0 +1,35 @@
+.order-form {
+  line-height: 18px;
+}
+
+.order-form-wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding: 17px 30px 55px;
+}
+
+.order-form__text {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-text);
+}
+
+.order-form__item {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.order-form__footnote {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--basic-text);
+}
+
