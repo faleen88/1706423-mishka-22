@@ -1,6 +1,7 @@
 .goods {
   background-image: url("../../img/hero-mobile@2x1.jpg");
   background-repeat: no-repeat;
+  background-position: 50% -20px;
   width: 320px;
   min-height: 488px;
 }
@@ -34,31 +35,24 @@
 
 .goods__link {
   color: var(--basic-white);
+  display: flex;
 }
 
 .goods__subtitle {
   margin: 0;
   font-size: 19px;
+}
 
-  &--interior::after {
-    content: "";
-    position: absolute;
-    top: 23px;
+.goods__icon {
+  position: absolute;
+
+  &--interior {
     right: 36px;
-    background-image: url("../../img/interior.svg.svg");
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 62px;
+    top: 23px;
   }
 
-  &--toy::after {
-    content: "";
-    position: absolute;
-    top: 21px;
+  &--toy {
     right: 27px;
-    background-image: url("../../img/toy-svg.svg");
-    background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
+    top: 21px;
   }
 }
