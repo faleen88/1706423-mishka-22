@@ -1,0 +1,55 @@
+.video__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px 58px;
+}
+
+.video__card {
+  border: 1px solid #ececec;
+}
+
+.video__title {
+  margin: 0;
+  padding: 21.5px 13px 26.5px 91px;
+  position: relative;
+  font-size: inherit;
+  line-height: inherit;
+
+  &--icon::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 34px;
+    background-image: url("../../img/video.svg.svg");
+    width: 32px;
+    height: 22px;
+  }
+}
+
+.video__container {
+  position: relative;
+}
+
+.video__button-play {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: -95px;
+  left: 73px;
+  width: 101px;
+  height: 77px;
+  cursor: pointer;
+}
+
+.video__description {
+  margin: 0;
+  padding: 30px 0 41px 34px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--basic-text);
+}
+
+.video__button {
+  width: 188px;
+  margin: 0 34px 32px;
+}
