@@ -6,12 +6,12 @@
 
 .main-nav__item {
   padding: 27.5px 0 26.5px 76px;
-  border-bottom: 1px solid var(--basic-border);
+  border-bottom: 1px solid $lightgrey;
   position: relative;
 }
 
 .main-nav__link {
-  color: var(--basic-black);
+  color: $black;
 }
 
 .main-nav__icon {

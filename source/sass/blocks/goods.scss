@@ -1,5 +1,5 @@
 .goods {
-  background-image: url("../../img/hero-mobile@2x1.jpg");
+  background-image: url("../img/hero-mobile@2x1.jpg");
   background-repeat: no-repeat;
   background-position: 50% -20px;
   width: 320px;
@@ -25,16 +25,16 @@
   position: relative;
 
   &--interior {
-    background-color: var(--basic-accent);
+    background-color: $tiffany;
   }
 
   &--toy {
-    background-color: var(--special-darc-accent);
+    background-color: $dark-tiffany;
   }
 }
 
 .goods__link {
-  color: var(--basic-white);
+  color: $white;
   display: flex;
 }
 

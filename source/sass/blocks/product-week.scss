@@ -6,7 +6,7 @@
   margin: 0;
   font-size: 17px;
   line-height: 20px;
-  color: var(--basic-accent);
+  color: $tiffany;
   text-transform: uppercase;
   margin-bottom: 17.5px;
 }
@@ -21,7 +21,7 @@
 .product-week__description {
   font-size: 15px;
   font-weight: 400;
-  color: var(--basic-text);
+  color: $darkgrey;
   margin: 0;
   margin-bottom: 19px;
 }
@@ -30,22 +30,22 @@
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
-  color: var(--basic-text);
+  color: $darkgrey;
   border-collapse: collapse;
   min-height: 120px;
   margin-bottom: 28px;
 }
 
 .product-week__option {
-  border-bottom: 1px solid var(--basic-border);
+  border-bottom: 1px solid $lightgrey;
   min-width: 95px;
 }
 
 .product-week__value {
-  border-bottom: 1px solid var(--basic-border);
+  border-bottom: 1px solid $lightgrey;
   min-width: 160px;
 }
 
 .product-week__price {
-  color: var(--basic-text);
+  color: $darkgrey;
 }

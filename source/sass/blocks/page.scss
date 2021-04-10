@@ -1,6 +1,6 @@
 .page {
   height: 100%;
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: $fontFamily;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -10,6 +10,6 @@
   min-width: 320px;
   margin: 0;
   padding: 0;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+  color: $black;
+  background-color: $white;
 }
