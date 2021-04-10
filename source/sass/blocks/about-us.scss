@@ -1,0 +1,82 @@
+.about-us {
+  padding: 31px 30px 29px;
+}
+
+.about-us__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about-us__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us__item {
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 83.5px;
+  position: relative;
+
+  &--eco::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 8px;
+    background-image: url("../../img/icon-1.svg.svg");
+    width: 33px;
+    height: 38px;
+  }
+
+  &--style::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-image: url("../../img/icon-3.svg.svg");
+    width: 47px;
+    height: 27px;
+  }
+
+  &--like::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 7px;
+    background-image: url("../../img/icon-5.svg.svg");
+    width: 34px;
+    height: 27px;
+  }
+
+  &--handmade::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 3px;
+    background-image: url("../../img/icon-2.svg.svg");
+    width: 35px;
+    height: 34px;
+  }
+
+  &--manufacture::before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: -6px;
+    background-image: url("../../img/icon-4.svg.svg");
+    width: 55px;
+    height: 23px;
+  }
+
+  &--present::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 3px;
+    background-image: url("../../img/icon-6.svg.svg");
+    width: 33px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,17 @@
+.filter-color {
+  margin-bottom: 33px;
+}
+
+.filter-color__title {
+  margin-bottom: 25px;
+}
+
+.filter-color__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-color__item:not(:last-child) {
+  margin-bottom: 23px;
+}

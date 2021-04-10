@@ -1,0 +1,29 @@
+.filter-radio {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  position: relative;
+  padding-left: 60px;
+}
+
+.filter-radio__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--basic-text);
+  border-radius: 50%;
+}
+
+.filter-radio__input:checked + .filter-radio__text::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--special-e-mail);
+  border-radius: 50%;
+}

@@ -1,0 +1,27 @@
+.filter-checkbox {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  position: relative;
+  padding-left: 60px;
+}
+
+.filter-checkbox__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--basic-text);
+}
+
+.filter-checkbox__input:checked + .filter-checkbox__text::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 7px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../../img/tick.svg");
+}
