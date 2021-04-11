@@ -1,18 +1,50 @@
-.contacts {
-  padding: 38px 30px 39px;
+.contacts__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 38px 0 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 68px 0 57px;
+  }
 }
 
 .contacts__title {
   margin: 0;
+  padding-left: 30px;
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 49px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -23px;
+      right: 52px;
+      background-image: url("../img/flag.svg");
+      background-repeat: no-repeat;
+      width: 47px;
+      height: 81px;
+    }
+  }
 }
 
 .contacts__list {
-  border-collapse: collapse;
-  margin-left: -1px;
-  margin-bottom: 62px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 49px;
+  }
 }
 
 .contacts__item {
@@ -20,21 +52,58 @@
   line-height: 30px;
   font-weight: 400;
   color: var(--basic-text);
-  vertical-align: top;
-  height: 60px;
+  display: flex;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
-.contacts__type {
-  min-width: 76px;
+.contacts__value {
+  margin-left: 34px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
 }
 
 .contacts__link {
   color: var(--basic-text);
-  border-bottom: 1px solid $special-tiffany;
+}
+
+.contacts__link::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: 1px;
+  width: 167px;
+  height: 1px;
+  background-color: $special-tiffany;
+
+  @media (min-width: $tablet-width) {
+    width: 204px;
+    top: 29px;
+  }
 }
 
 .contacts__map {
   border: none;
-  margin-left: -30px;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 457px;
+    margin-bottom: 50px;
+  }
+}
+
+.contacts__container .contacts__button {
+  margin: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 226px;
+    margin: 0 269px;
+  }
 }
