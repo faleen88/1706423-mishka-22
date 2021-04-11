@@ -1,5 +1,22 @@
-.reviews {
+@media (min-width: $tablet-width) {
+  .reviews {
+    background-image: url("../img/review1.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__container {
+  width: 260px;
+  margin: 0 auto;
   padding: 29px 30px 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 76px 50px 86px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .reviews__title {
@@ -7,6 +24,20 @@
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 3px;
+    margin-bottom: 39px;
+    order: -2;
+  }
+}
+
+.reviews__list {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .reviews__item {
@@ -21,28 +52,48 @@
   font-weight: 400;
   margin-bottom: 33px;
   color: $darkgrey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 63px;
+  }
 }
 
 .reviews__autor-nume {
   font-style: normal;
+  display: block;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .reviews__autor-link {
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
+  display: block;
 }
 
-.reviews__buttons {
+.reviews__btns {
   width: 258px;
   height: 50px;
   border: 1px solid $lightgrey;
   background-color: $white;
   position: relative;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: -6px;
+    right: 0;
+    width: 175px;
+    border: none;
+  }
 }
 
-.reviews__button {
+.reviews__btn {
   width: 126px;
   height: 50px;
   border: none;
@@ -56,6 +107,11 @@
     background-image: url("../img/huge-arrow-left.svg");
     width: 50px;
     height: 26px;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      left: 19px;
+    }
   }
 
   &--prev::after {
@@ -66,6 +122,10 @@
     background-color: $lightgrey;
     width: 1px;
     height: 50px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &--next {
@@ -76,5 +136,17 @@
     background-image: url("../img/huge-arrow-right.svg");
     width: 50px;
     height: 26px;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      right: 19px;
+    }
+  }
+}
+
+.reviews__container .reviews__button {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    width: 171px;
   }
 }
