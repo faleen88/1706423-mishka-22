@@ -1,5 +1,23 @@
-.product-week {
+.product-week__container {
+  width: 260px;
+  margin: 0 auto;
   padding: 31px 30px 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 40px 50px 52px;
+  }
+}
+
+.product-week__flex {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .product-week__title {
@@ -9,6 +27,12 @@
   color: $tiffany;
   text-transform: uppercase;
   margin-bottom: 17.5px;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    text-align: center;
+    line-height: 17px;
+  }
 }
 
 .product-week__subtitle {
@@ -16,14 +40,34 @@
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 3.5px;
+  order: -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 37px;
+  }
 }
 
-.product-week__description {
+@media (min-width: $tablet-width) {
+  .product-week__description {
+    width: 292px;
+    height: 417px;
+  }
+}
+
+.product-week__text {
   font-size: 15px;
   font-weight: 400;
   color: $darkgrey;
   margin: 0;
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 41px;
+  }
 }
 
 .product-week__options-list {
@@ -34,18 +78,43 @@
   border-collapse: collapse;
   min-height: 120px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .product-week__option {
   border-bottom: 1px solid $lightgrey;
   min-width: 95px;
+  padding-bottom: 5px;
 }
 
 .product-week__value {
   border-bottom: 1px solid $lightgrey;
   min-width: 160px;
+  padding-bottom: 5px;
 }
 
 .product-week__price {
   color: $darkgrey;
+  display: block;
+  margin-bottom: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 33px;
+  }
+}
+
+.product-week__photo {
+  margin-bottom: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .product-week__photo {
+    display: none;
+  }
 }

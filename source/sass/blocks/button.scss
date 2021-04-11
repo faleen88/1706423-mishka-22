@@ -10,4 +10,9 @@
   line-height: 20px;
   color: $darkgrey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 288px;
+    font-size: 17px;
+  }
 }

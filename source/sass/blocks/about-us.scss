@@ -1,17 +1,35 @@
-.about-us {
+.about-us__container {
+  width: 260px;
+  margin: 0 auto;
   padding: 31px 30px 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 66px 50px 86px;
+  }
 }
 
 .about-us__title {
   margin: 0;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: -14px;
+  }
 }
 
 .about-us__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .about-us__item {
@@ -28,6 +46,19 @@
     background-image: url("../img/icon-1.svg");
     width: 33px;
     height: 38px;
+
+    @media (min-width: $tablet-width) {
+      top: 53px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--style {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
   }
 
   &--style::before {
@@ -38,6 +69,19 @@
     background-image: url("../img/icon-3.svg");
     width: 47px;
     height: 27px;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--like {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
   }
 
   &--like::before {
@@ -48,6 +92,10 @@
     background-image: url("../img/icon-5.svg");
     width: 34px;
     height: 27px;
+
+    @media (min-width: $tablet-width) {
+      top: 62px;
+    }
   }
 
   &--handmade::before {
@@ -58,6 +106,10 @@
     background-image: url("../img/icon-2.svg");
     width: 35px;
     height: 34px;
+
+    @media (min-width: $tablet-width) {
+      top: 59px;
+    }
   }
 
   &--manufacture::before {
@@ -68,6 +120,10 @@
     background-image: url("../img/icon-4.svg");
     width: 55px;
     height: 23px;
+
+    @media (min-width: $tablet-width) {
+      top: 60px;
+    }
   }
 
   &--present::before {
@@ -78,5 +134,15 @@
     background-image: url("../img/icon-6.svg");
     width: 33px;
     height: 32px;
+
+    @media (min-width: $tablet-width) {
+      top: 59px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    padding-top: 111px;
   }
 }
