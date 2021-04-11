@@ -3,8 +3,23 @@
   background-repeat: no-repeat;
   background-position: 50% -20px;
   border-top: 1px solid $lightgrey;
-  width: 320px;
   min-height: 488px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-desktop2.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    height: 746px;
+  }
+}
+
+.goods__container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
 
 .goods__title {
@@ -13,12 +28,25 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 155px;
+    padding-bottom: 372px;
+  }
 }
 
 .goods__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 50px;
+  }
 }
 
 .goods__item {
@@ -32,6 +60,10 @@
   &--toy {
     background-color: $dark-tiffany;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 167px 34px 36px;
+  }
 }
 
 .goods__link {
@@ -42,7 +74,13 @@
 .goods__subtitle {
   margin: 0;
   font-size: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
+
 
 .goods__icon {
   position: absolute;
@@ -55,5 +93,17 @@
   &--toy {
     right: 27px;
     top: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--interior {
+      right: 36px;
+      top: 30px;
+    }
+
+    &--toy {
+      right: 33px;
+      top: 31px;
+    }
   }
 }
