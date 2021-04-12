@@ -7,9 +7,12 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-desktop2.jpg");
-    background-repeat: no-repeat;
     background-position: 50% 0;
     height: 746px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero-desktop1.jpg");
   }
 }
 
@@ -19,6 +22,10 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
   }
 }
 
@@ -34,6 +41,13 @@
     line-height: 50px;
     padding-top: 155px;
     padding-bottom: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 158px;
+    padding-bottom: 355px;
   }
 }
 
