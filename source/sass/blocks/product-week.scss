@@ -51,8 +51,11 @@
 
 @media (min-width: $tablet-width) {
   .product-week__description {
-    width: 292px;
+
     height: 417px;
+    display: grid;
+    grid-template-columns: 292px 334px;
+    grid-column-gap: 42px;
   }
 }
 
@@ -115,6 +118,9 @@
 
 @media (min-width: $tablet-width) {
   .product-week__photo {
-    display: none;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
   }
 }
