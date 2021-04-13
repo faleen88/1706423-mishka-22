@@ -7,6 +7,11 @@
     width: 668px;
     padding: 66px 50px 86px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 68px 50px 90px;
+  }
 }
 
 .about-us__title {
@@ -19,6 +24,12 @@
     line-height: 50px;
     margin-bottom: -14px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about-us__list {
@@ -29,6 +40,10 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 175px;
   }
 }
 

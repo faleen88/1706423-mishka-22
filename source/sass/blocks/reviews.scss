@@ -9,6 +9,12 @@
     background-image: url("../img/review1.jpg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 78px 50px 163px;
+    background-position: 50px 0;
+  }
 }
 
 .reviews__flex {
@@ -32,11 +38,23 @@
     margin-bottom: 39px;
     order: -2;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 35px;
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .reviews__list {
   @media (min-width: $tablet-width) {
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
   }
 }
 
@@ -57,6 +75,11 @@
     font-size: 17px;
     margin-bottom: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+    padding-right: 70px;
+  }
 }
 
 .reviews__autor-nume {
@@ -66,6 +89,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
   }
 }
 
