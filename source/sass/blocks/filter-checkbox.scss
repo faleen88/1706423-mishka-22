@@ -13,7 +13,7 @@
   left: 0;
   width: 34px;
   height: 34px;
-  border: 2px solid var(--basic-text);
+  border: 2px solid $darkgrey;
 }
 
 .filter-checkbox__input:checked + .filter-checkbox__text::after {
@@ -23,5 +23,5 @@
   left: 7px;
   width: 23px;
   height: 16px;
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
 }

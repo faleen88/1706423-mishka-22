@@ -21,7 +21,7 @@
   width: 260px;
   height: 48px;
   border: none;
-  border-bottom: 2px solid var(--basic-black);
+  border-bottom: 2px solid $black;
 
   &::placeholder {
     font-size: 17px;

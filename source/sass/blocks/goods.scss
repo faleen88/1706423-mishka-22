@@ -1,9 +1,32 @@
 .goods {
-  background-image: url("../../img/hero-mobile@2x1.jpg");
+  background-image: url("../img/hero-mobile@2x1.jpg");
   background-repeat: no-repeat;
   background-position: 50% -20px;
-  width: 320px;
+  border-top: 1px solid $lightgrey;
   min-height: 488px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-desktop2.jpg");
+    background-position: 50% 0;
+    height: 746px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero-desktop1.jpg");
+  }
+}
+
+.goods__container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+  }
 }
 
 .goods__title {
@@ -12,12 +35,32 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 155px;
+    padding-bottom: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 158px;
+    padding-bottom: 355px;
+  }
 }
 
 .goods__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 50px;
+  }
 }
 
 .goods__item {
@@ -25,23 +68,33 @@
   position: relative;
 
   &--interior {
-    background-color: var(--basic-accent);
+    background-color: $tiffany;
   }
 
   &--toy {
-    background-color: var(--special-darc-accent);
+    background-color: $dark-tiffany;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 167px 34px 36px;
   }
 }
 
 .goods__link {
-  color: var(--basic-white);
+  color: $white;
   display: flex;
 }
 
 .goods__subtitle {
   margin: 0;
   font-size: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
+
 
 .goods__icon {
   position: absolute;
@@ -54,5 +107,17 @@
   &--toy {
     right: 27px;
     top: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--interior {
+      right: 36px;
+      top: 30px;
+    }
+
+    &--toy {
+      right: 33px;
+      top: 31px;
+    }
   }
 }

@@ -4,10 +4,15 @@
   justify-content: center;
   width: 256px;
   height: 48px;
-  background-color: var(--basic-white);
-  border: 2px solid var(--basic-text);
+  background-color: $white;
+  border: 2px solid $darkgrey;
   font-size: 18px;
   line-height: 20px;
-  color: var(--basic-text);
+  color: $darkgrey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 288px;
+    font-size: 17px;
+  }
 }

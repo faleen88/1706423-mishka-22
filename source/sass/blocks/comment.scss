@@ -7,11 +7,11 @@
 }
 
 .comment__text {
-  border: 2px solid var(--basic-black);
+  border: 2px solid $black;
   width: 256px;
   height: 138px;
   resize: none;
-  font-family: inherit;
+  font-family: $fontFamily;
   padding: 0;
 
   &::placeholder {

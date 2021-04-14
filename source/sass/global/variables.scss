@@ -1,11 +1,22 @@
-:root {
-  --basic-black: #000000;
-  --basic-white: #ffffff;
-  --basic-accent: #63d1bb;
-  --basic-border: #ececec;
-  --basic-text: #444444;
-  --basic-background: #f1f1f1;
+// Font //
 
-  --special-darc-accent: #56c3b2;
-  --special-e-mail: #62d1ba;
-}
+$fontFamily: "Open sans", "Arial", sans-serif;
+
+// Colors //
+
+$black: #000000;
+$white: #ffffff;
+$tiffany: #63d1bb;
+$lightgrey: #ececec;
+$darkgrey: #444444;
+$special-grey: #f1f1f1;
+$grey: #e5e5e5;
+$dark-tiffany: #56c3b2;
+$special-tiffany: #62d1ba;
+$special-black: #231f20;
+
+// Viewports //
+
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;
