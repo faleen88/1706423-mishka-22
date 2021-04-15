@@ -2,6 +2,11 @@
   width: 260px;
   margin: 0 auto;
   padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 67px 50px 27px;
+  }
 }
 
 .cards__list {
@@ -12,4 +17,8 @@
 
 .cards__item:not(:last-child) {
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 }
