@@ -13,6 +13,11 @@
     align-items: baseline;
     padding: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 4fr;
+    padding-right: 225px;
+  }
 }
 
 .data__phone {
@@ -23,6 +28,11 @@
     padding: 50px;
     padding-bottom: 24px;
     background-color: $special-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 4fr;
+    padding-right: 225px;
   }
 }
 
@@ -35,10 +45,19 @@
     padding-top: 0;
     background-color: $special-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 4fr;
+    padding-right: 225px;
+  }
 }
 
 .data__title {
   margin-bottom: 5px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 62px;
+  }
 }
 
 .data__list {
@@ -112,7 +131,13 @@
 
     @media (min-width: $tablet-width) {
       bottom: 41px;
-      right: 76px;
+      right: 26px;
+      padding-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 8px;
+      padding-right: 225px;
     }
   }
 
@@ -122,7 +147,13 @@
 
     @media (min-width: $tablet-width) {
       top: 16px;
-      right: 72px;
+      right: 22px;
+      padding-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 4px;
+      padding-right: 225px;
     }
   }
 }

@@ -11,6 +11,11 @@
     width: 768px;
     padding: 55px 0 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding-top: 100px;
+  }
 }
 
 .order-form__text {
@@ -27,6 +32,10 @@
     margin-bottom: 14px;
     padding: 0 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
 }
 
 .order-form__item {
@@ -42,6 +51,10 @@
     justify-content: space-between;
     align-items: baseline;
     padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
   }
 
   .order-form__button {

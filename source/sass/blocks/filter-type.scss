@@ -8,6 +8,10 @@
     padding: 50px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 5fr;
+  }
 }
 
 .filter-type__title {
@@ -15,6 +19,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 62px;
   }
 }
 

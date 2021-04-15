@@ -8,10 +8,20 @@
     padding: 50px;
     margin-bottom: 4px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 4fr;
+    padding-right: 225px;
+    margin-bottom: 0;
+  }
 }
 
 .comment__title {
   margin-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 62px;
+  }
 }
 
 .comment__text {
