@@ -4,6 +4,17 @@
   min-height: 40px;
   position: relative;
   padding-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+    padding-left: 78px;
+  }
+}
+
+.filter-radio__text {
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }
 
 .filter-radio__text::before {
@@ -15,6 +26,11 @@
   height: 36px;
   border: 2px solid $darkgrey;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .filter-radio__input:checked + .filter-radio__text::after {
@@ -26,4 +42,11 @@
   height: 16px;
   background-color: $special-tiffany;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 19px;
+    height: 19px;
+    top: 15px;
+    left: 15px;
+  }
 }

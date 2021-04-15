@@ -6,6 +6,11 @@
   width: 260px;
   margin: 0 auto;
   padding: 17px 30px 55px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 55px 0 50px;
+  }
 }
 
 .order-form__text {
@@ -15,6 +20,13 @@
   line-height: 24px;
   font-weight: 400;
   color: $darkgrey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 14px;
+    padding: 0 50px;
+  }
 }
 
 .order-form__item {
@@ -24,6 +36,25 @@
   position: relative;
 }
 
+.order-form__dispatch {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 50px;
+  }
+
+  .order-form__button {
+    width: 260px;
+    height: 52px;
+
+    @media (min-width: $tablet-width) {
+      width: 230px;
+      height: 52px;
+    }
+  }
+}
+
 .order-form__footnote {
   margin: 0;
   margin-bottom: 30px;
@@ -31,4 +62,11 @@
   line-height: 16px;
   font-weight: 400;
   color: $darkgrey;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
 }
