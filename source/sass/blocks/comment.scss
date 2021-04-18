@@ -1,9 +1,27 @@
 .comment {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: baseline;
+    padding: 50px;
+    margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 4fr;
+    padding-right: 225px;
+    margin-bottom: 0;
+  }
 }
 
 .comment__title {
   margin-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 62px;
+  }
 }
 
 .comment__text {
@@ -19,5 +37,14 @@
     line-height: 18px;
     width: 200px;
     padding: 17px;
+
+    @media (min-width: $tablet-width) {
+      width: 90%;
+      font-size: 19px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
   }
 }

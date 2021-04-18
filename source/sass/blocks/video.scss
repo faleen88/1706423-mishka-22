@@ -2,10 +2,37 @@
   width: 260px;
   margin: 0 auto;
   padding: 0 30px 58px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 0 50px 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding-bottom: 105px;
+  }
 }
 
 .video__card {
   border: 1px solid $lightgrey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+}
+
+.video__image {
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-top: -1px;
+  }
 }
 
 .video__title {
@@ -15,6 +42,15 @@
   font-size: inherit;
   line-height: inherit;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 36px 13px 24.5px 107px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 95px 110px 27px 79px;
+  }
+
   &--icon::before {
     content: "";
     position: absolute;
@@ -23,11 +59,27 @@
     background-image: url("../img/video.svg");
     width: 32px;
     height: 22px;
+
+    @media (min-width: $tablet-width) {
+      top: 34px;
+      left: 42px;
+    }
   }
 }
 
 .video__container {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
 }
 
 .video__button-play {
@@ -39,6 +91,11 @@
   width: 101px;
   height: 77px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 187px;
+    left: 277px;
+  }
 }
 
 .video__description {
@@ -47,9 +104,29 @@
   font-size: 13px;
   font-weight: 400;
   color: var(--basic-text);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px 41px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 36px 51px 79px;
+  }
 }
 
 .video__button {
   width: 188px;
   margin: 0 34px 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 580px;
+    margin: 0 42px 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 226px;
+    margin: 0 57px 60px 80px;
+  }
 }

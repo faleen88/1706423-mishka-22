@@ -2,14 +2,38 @@
   width: 260px;
   margin: 0 auto;
   padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 67px 50px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 111px 50px 57px;
+  }
 }
 
 .cards__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 51px;
+  }
 }
 
 .cards__item:not(:last-child) {
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }

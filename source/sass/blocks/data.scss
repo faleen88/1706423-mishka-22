@@ -1,9 +1,63 @@
 .data {
   margin-bottom: 34.5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.data__name {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: baseline;
+    padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 4fr;
+    padding-right: 225px;
+  }
+}
+
+.data__phone {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: baseline;
+    padding: 50px;
+    padding-bottom: 24px;
+    background-color: $special-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 4fr;
+    padding-right: 225px;
+  }
+}
+
+.data__post {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: baseline;
+    padding: 50px;
+    padding-top: 0;
+    background-color: $special-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 4fr;
+    padding-right: 225px;
+  }
 }
 
 .data__title {
   margin-bottom: 5px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 62px;
+  }
 }
 
 .data__list {
@@ -11,10 +65,32 @@
   padding: 0;
   margin: 0;
   margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.data__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .data__item:not(:last-child) {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.data__label {
+  @media (min-width: $tablet-width) {
+    padding-right: 25px;
+    font-size: 19px;
+  }
 }
 
 .data__input {
@@ -26,6 +102,23 @@
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
+    font-weight: 400;
+    font-family: $fontFamily;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      padding-left: 17px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.data__input--contacts {
+  @media (min-width: $tablet-width) {
+    background-color: $special-grey;
   }
 }
 
@@ -33,12 +126,34 @@
   position: absolute;
 
   &--phone {
-    top: 11px;
+    bottom: 18px;
     right: 7px;
+
+    @media (min-width: $tablet-width) {
+      bottom: 41px;
+      right: 26px;
+      padding-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 8px;
+      padding-right: 225px;
+    }
   }
 
   &--letter {
-    top: 16px;
+    bottom: 16px;
     right: 3px;
+
+    @media (min-width: $tablet-width) {
+      top: 16px;
+      right: 22px;
+      padding-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 4px;
+      padding-right: 225px;
+    }
   }
 }
