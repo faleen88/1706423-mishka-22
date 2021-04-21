@@ -1,3 +1,7 @@
+.product-week {
+  position: relative;
+}
+
 .product-week__container {
   width: 260px;
   margin: 0 auto;
@@ -10,7 +14,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1050px;
-    padding: 117px 50px 73px;
+    padding: 54px 50px 73px;
+    min-height: 660px;
   }
 }
 
@@ -45,6 +50,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 38px;
+    padding-top: 70px;
   }
 }
 
@@ -67,9 +73,9 @@
     margin-bottom: 35px;
     order: 0;
     z-index: 1;
+    padding-top: 63px;
   }
 }
-
 
 .product-week__description {
   @media (min-width: $tablet-width) {
@@ -165,7 +171,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -150px;
+    margin-top: -153px;
     margin-bottom: 0;
   }
 }
