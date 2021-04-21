@@ -15,8 +15,6 @@
 }
 
 .video__card {
-  border: 1px solid $lightgrey;
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -28,19 +26,14 @@
   }
 }
 
-.video__image {
-  @media (min-width: $desktop-width) {
-    display: block;
-    margin-top: -1px;
-  }
-}
-
 .video__title {
   margin: 0;
   padding: 21.5px 13px 26.5px 91px;
   position: relative;
   font-size: inherit;
   line-height: inherit;
+  border: 1px solid $lightgrey;
+  border-bottom: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -49,6 +42,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 95px 110px 27px 79px;
+    border-left: none;
   }
 
   &--icon::before {
@@ -86,7 +80,7 @@
   border: none;
   background-color: transparent;
   position: absolute;
-  top: -95px;
+  top: 35px;
   left: 73px;
   width: 101px;
   height: 77px;
@@ -99,6 +93,15 @@
 }
 
 .video__description {
+  border: 1px solid $lightgrey;
+  border-top: none;
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+  }
+}
+
+.video__text {
   margin: 0;
   padding: 30px 0 41px 34px;
   font-size: 13px;

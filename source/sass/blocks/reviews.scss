@@ -1,3 +1,7 @@
+.reviews {
+  position: relative;
+}
+
 .reviews__container {
   width: 260px;
   margin: 0 auto;
@@ -6,8 +10,13 @@
   @media (min-width: $tablet-width) {
     width: 668px;
     padding: 76px 50px 86px;
-    background-image: url("../img/review1.jpg");
+    background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px;
+    }
   }
 
   @media (min-width: $desktop-width) {

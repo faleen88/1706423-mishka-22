@@ -1,3 +1,7 @@
+.product {
+  position: relative;
+}
+
 .product__link {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -90,13 +94,13 @@
 }
 
 .product__button {
-  float: right;
+  position: absolute;
+  bottom: 25px;
+  right: 27px;
   border: none;
   background-color: $white;
   padding: 0;
   width: 30px;
   height: 30px;
   cursor: pointer;
-  margin-top: -4px;
-  margin-right: -5px;
 }

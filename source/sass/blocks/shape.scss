@@ -1,0 +1,17 @@
+.shape::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/zigzag-fill-tablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 34px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    bottom: -17px;
+  }
+}
