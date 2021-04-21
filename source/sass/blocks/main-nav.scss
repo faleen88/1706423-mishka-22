@@ -72,13 +72,21 @@
   padding: 21px 118px 17px 116px;
   border-top: 1px solid $lightgrey;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 21px 238px 17px 0;
+    padding: 20px 205px 20px 0;
     border-right: 1px solid $lightgrey;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 21px 145px 17px 50px;
+    padding: 9px 101px 7px 25px;
   }
 }
 
