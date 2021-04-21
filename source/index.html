@@ -113,7 +113,13 @@
                   <td class="product-week__value">15 см</td>
                 </tr>
               </table>
-              <img class="product-week__photo" src="img/triple-set-mobile1.jpg" width="525" height="636" alt="Две серо-зеленые вязанные корзинки и одна бело-розовая разных размеров">
+              <div class="product-week__photo">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                  <img src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile.jpg 1x, img/triple-set-mobile@2x.jpg 2x" alt="Две серо-зеленые вязанные корзинки и одна бело-розовая разных размеров">
+                </picture>
+              </div>
               <span class="product-week__price">Цена: 990 руб.</span>
               <a class="button" href="#">Заказать</a>
             </div>
