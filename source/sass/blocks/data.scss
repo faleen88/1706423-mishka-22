@@ -1,5 +1,5 @@
 .data {
-  margin-bottom: 34.5px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -64,7 +64,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 24px;
+  margin-top: 29px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -95,7 +95,7 @@
 
 .data__input {
   width: 260px;
-  height: 48px;
+  height: 50px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -137,9 +137,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 96%;
     padding-left: 17px;
     font-size: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 97%;
   }
 }
 
@@ -155,8 +159,8 @@
   opacity: 0.2;
 
   &--phone {
-    bottom: 18px;
-    right: 7px;
+    bottom: 17px;
+    right: 10px;
 
     @media (min-width: $tablet-width) {
       bottom: 41px;
@@ -171,8 +175,8 @@
   }
 
   &--letter {
-    bottom: 16px;
-    right: 3px;
+    bottom: 15px;
+    right: 6px;
 
     @media (min-width: $tablet-width) {
       top: 16px;

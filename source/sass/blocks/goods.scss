@@ -2,7 +2,7 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% -20px;
+  background-position: 50% -19px;
   border-top: 1px solid $lightgrey;
   min-height: 488px;
   position: relative;
@@ -39,7 +39,7 @@
 
 .goods__title {
   margin: 0;
-  padding: 70px 30px 122px;
+  padding: 72px 30px 120px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -54,8 +54,8 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 158px;
-    padding-bottom: 355px;
+    padding-top: 157px;
+    padding-bottom: 356px;
   }
 }
 
@@ -76,7 +76,7 @@
 }
 
 .goods__link {
-  padding: 24px 30px 31px;
+  padding: 25px 30px 30px;
   color: $white;
   display: flex;
 

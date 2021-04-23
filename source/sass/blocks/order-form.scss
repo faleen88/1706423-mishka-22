@@ -5,22 +5,22 @@
 .order-form-wrapper {
   width: 260px;
   margin: 0 auto;
-  padding: 17px 30px 55px;
+  padding: 18px 30px 55px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 55px 0 50px;
+    padding: 66px 0 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-    padding-top: 100px;
+    padding-top: 116px;
   }
 }
 
 .order-form__text {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -60,6 +60,10 @@
   .order-form__button {
     width: 260px;
     height: 52px;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+    font-family: $fontFamily;
 
     @media (min-width: $tablet-width) {
       width: 230px;
