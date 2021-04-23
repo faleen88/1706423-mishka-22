@@ -96,23 +96,50 @@
 .data__input {
   width: 260px;
   height: 48px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: $fontFamily;
+  color: $darkgrey;
   border: none;
-  border-bottom: 2px solid $black;
+  box-shadow: inset 0 -2px 0 $black;
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 $special-tiffany;
+
+    & + .data__icon {
+      fill: $special-tiffany;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 $special-tiffany;
+    outline: none;
+
+    & + .data__icon {
+      fill: $special-tiffany;
+      opacity: 1;
+    }
+  }
 
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
     font-family: $fontFamily;
+    color: $black;
+    opacity: 0.3;
 
     @media (min-width: $tablet-width) {
       font-size: 19px;
-      padding-left: 17px;
     }
   }
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding-left: 17px;
+    font-size: 19px;
   }
 }
 
@@ -124,6 +151,8 @@
 
 .data__icon {
   position: absolute;
+  fill: $black;
+  opacity: 0.2;
 
   &--phone {
     bottom: 18px;

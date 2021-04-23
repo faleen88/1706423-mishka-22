@@ -190,9 +190,27 @@
 
 .main-nav__link {
   color: $black;
-}
 
-.main-nav__icon {
-  position: absolute;
-  left: 30px;
+  .main-nav__icon {
+    position: absolute;
+    left: 30px;
+    opacity: 0.2;
+  }
+
+  &:hover {
+    opacity: 0.6;
+
+    .main-nav__icon {
+      opacity: 1;
+      fill: $tiffany;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .main-nav__icon {
+      opacity: 0.3;
+    }
+  }
 }

@@ -1,0 +1,11 @@
+.logo__link {
+  fill: $black;
+
+  &:hover {
+    fill: $tiffany-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

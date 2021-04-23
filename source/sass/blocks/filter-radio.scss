@@ -5,6 +5,18 @@
   position: relative;
   padding-left: 60px;
 
+  &:hover {
+    .filter-radio__text::before {
+      border: 2px solid $special-tiffany;
+    }
+  }
+
+  &:active {
+    .filter-radio__text::before {
+      border: 2px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 50px;
     padding-left: 78px;

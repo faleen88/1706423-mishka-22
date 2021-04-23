@@ -29,22 +29,34 @@
   width: 256px;
   height: 138px;
   resize: none;
+  font-size: 17px;
+  line-height: 18px;
   font-family: $fontFamily;
-  padding: 0;
+  padding: 17px;
+
+  &:hover {
+    border: 2px solid$special-tiffany;
+  }
+
+  &:focus {
+    border: 2px solid $special-tiffany;
+    outline: none;
+  }
 
   &::placeholder {
-    font-size: 17px;
-    line-height: 18px;
     width: 200px;
-    padding: 17px;
+    color: $black;
+    opacity: 0.3;
 
     @media (min-width: $tablet-width) {
       width: 90%;
-      font-size: 19px;
+
+      padding: 0;
     }
   }
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    font-size: 19px;
   }
 }

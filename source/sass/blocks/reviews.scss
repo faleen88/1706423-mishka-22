@@ -134,8 +134,21 @@
   height: 50px;
   border: none;
   background-color: $white;
+  cursor: pointer;
 
-  &--prev {
+  @media (min-width: $tablet-width) {
+    width: 85px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  .reviews__btn-prev {
     content: "";
     position: absolute;
     top: 13px;
@@ -150,7 +163,7 @@
     }
   }
 
-  &--prev::after {
+  .reviews__btn-prev::after {
     content: "";
     position: absolute;
     top: -13px;
@@ -164,7 +177,7 @@
     }
   }
 
-  &--next {
+  .reviews__btn-next {
     content: "";
     position: absolute;
     top: 13px;

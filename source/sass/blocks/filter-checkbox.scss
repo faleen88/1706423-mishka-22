@@ -5,6 +5,18 @@
   position: relative;
   padding-left: 60px;
 
+  &:hover {
+    .filter-checkbox__text::before {
+      border: 2px solid $special-tiffany;
+    }
+  }
+
+  &:active {
+    .filter-checkbox__text::before {
+      border: 2px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 19px;
     padding-left: 82px;

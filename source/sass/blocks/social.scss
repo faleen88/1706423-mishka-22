@@ -7,3 +7,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.social__link {
+  fill: $black;
+
+  &:hover {
+    fill: $tiffany-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

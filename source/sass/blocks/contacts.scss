@@ -102,25 +102,16 @@
 }
 
 .contacts__link {
-  color: var(--basic-text);
-}
+  color: $darkgrey;
+  border-bottom: 1px solid $special-tiffany;
 
-.contacts__link::after {
-  content: "";
-  position: absolute;
-  top: 26px;
-  right: 1px;
-  width: 167px;
-  height: 1px;
-  background-color: $special-tiffany;
-
-  @media (min-width: $tablet-width) {
-    width: 204px;
-    top: 29px;
+  &:hover {
+    color: $tiffany-hover;
+    border-bottom: 1px solid rgb(70, 193, 174);
   }
 
-  @media (min-width: $desktop-width) {
-    top: 35px;
+  &:active {
+    border-bottom: 1px solid rgba(70, 193, 174, 0.1);
   }
 }
 
