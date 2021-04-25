@@ -5,12 +5,12 @@
 
   @media (min-width: $tablet-width) {
     width: 668px;
-    padding: 67px 50px 53px;
+    padding: 78px 50px 53px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
-    padding: 111px 50px 57px;
+    padding: 128px 50px 57px;
   }
 }
 
@@ -27,7 +27,7 @@
 }
 
 .cards__item:not(:last-child) {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;

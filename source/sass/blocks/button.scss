@@ -11,6 +11,15 @@
   color: $darkgrey;
   text-transform: uppercase;
 
+  &:hover {
+    color: $white;
+    background-color: $darkgrey;
+  }
+
+  &:active .button__text {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 288px;
     font-size: 17px;

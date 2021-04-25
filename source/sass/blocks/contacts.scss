@@ -32,7 +32,7 @@
     padding-left: 50px;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
     position: relative;
 
     &::after {
@@ -47,7 +47,7 @@
 
       @media (min-width: $desktop-width) {
         left: 63px;
-        top: 61px;
+        top: 62px;
       }
     }
   }
@@ -62,7 +62,9 @@
 }
 
 .contacts__list {
+  list-style: none;
   padding: 0 30px;
+  margin-bottom: 63px;
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
@@ -102,25 +104,25 @@
 }
 
 .contacts__link {
-  color: var(--basic-text);
-}
+  color: $darkgrey;
+  padding-bottom: 2px;
+  border-bottom: 1px solid $special-tiffany;
 
-.contacts__link::after {
-  content: "";
-  position: absolute;
-  top: 26px;
-  right: 1px;
-  width: 167px;
-  height: 1px;
-  background-color: $special-tiffany;
+  &:hover {
+    color: $tiffany-hover;
+    border-bottom: 1px solid rgb(70, 193, 174);
+  }
+
+  &:active {
+    border-bottom: 1px solid rgba(70, 193, 174, 0.1);
+  }
 
   @media (min-width: $tablet-width) {
-    width: 204px;
-    top: 29px;
+    padding-bottom: 3px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 35px;
+    padding-bottom: 8px;
   }
 }
 

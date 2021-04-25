@@ -28,7 +28,7 @@
 
 .video__title {
   margin: 0;
-  padding: 21.5px 13px 26.5px 91px;
+  padding: 20px 13px 26.5px 91px;
   position: relative;
   font-size: inherit;
   line-height: inherit;
@@ -37,7 +37,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding: 36px 13px 24.5px 107px;
+    padding: 40px 13px 24.5px 107px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,15 +48,20 @@
   &--icon::before {
     content: "";
     position: absolute;
-    top: 35px;
+    top: 33px;
     left: 34px;
     background-image: url("../img/video.svg");
     width: 32px;
     height: 22px;
 
     @media (min-width: $tablet-width) {
-      top: 34px;
+      top: 38px;
       left: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 45px;
+      left: 79px;
     }
   }
 }
@@ -86,15 +91,36 @@
   height: 77px;
   cursor: pointer;
 
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     top: 187px;
     left: 277px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 287px;
   }
 }
 
 .video__description {
   border: 1px solid $lightgrey;
   border-top: none;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 
   @media (min-width: $desktop-width) {
     border-left: none;
@@ -103,7 +129,7 @@
 
 .video__text {
   margin: 0;
-  padding: 30px 0 41px 34px;
+  padding: 35px 0 41px 34px;
   font-size: 13px;
   font-weight: 400;
   color: var(--basic-text);
@@ -115,7 +141,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 36px 51px 79px;
+    padding: 0 36px 53px 79px;
   }
 }
 

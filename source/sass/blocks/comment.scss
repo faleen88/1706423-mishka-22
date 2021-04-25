@@ -25,26 +25,40 @@
 }
 
 .comment__text {
-  border: 2px solid $black;
-  width: 256px;
-  height: 138px;
+  border: 2px solid $darkgrey;
+  width: 222px;
+  min-height: 104px;
   resize: none;
+  font-size: 17px;
+  line-height: 18px;
   font-family: $fontFamily;
-  padding: 0;
+  padding: 16px 17px;
+
+  &:hover {
+    border: 2px solid $special-tiffany;
+  }
+
+  &:focus {
+    border: 2px solid $special-tiffany;
+    outline: none;
+  }
 
   &::placeholder {
-    font-size: 17px;
-    line-height: 18px;
-    width: 200px;
-    padding: 17px;
+    width: 90%;
+    color: $black;
+    opacity: 0.3;
 
     @media (min-width: $tablet-width) {
-      width: 90%;
-      font-size: 19px;
+      padding: 0;
     }
   }
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 462px;
+    font-size: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 661px;
   }
 }
