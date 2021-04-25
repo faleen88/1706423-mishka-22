@@ -1,0 +1,125 @@
+.form-choice {
+  padding-top: 28px;
+  padding-bottom: 46px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+    padding-bottom: 46px;
+  }
+}
+
+.form-choice__title {
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0 56px;
+  text-align: start;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.form-choice__text {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $darkgrey;
+  display: block;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 17px;
+  }
+}
+
+.form-choice__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 7px;
+  width: 260px;
+  height: 48px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    padding: 0 16px;
+  }
+}
+
+.form-choice__item {
+  width: 78px;
+  height: 48px;
+  padding-top: 16px;
+  padding-left: 2px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 108px;
+  }
+}
+
+.form-choice__input + .form-choice__label::before {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 48px;
+  border: 2px solid $darkgrey;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 108px;
+  }
+}
+
+.form-choice__input:hover + .form-choice__label::before {
+  opacity: 0.3;
+}
+
+.form-choice__input:checked + .form-choice__label::before {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 48px;
+  border: 2px solid $tiffany;
+  opacity: 1;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 108px;
+  }
+}
+
+.form-choice__label {
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.form-choice__button {
+  width: 260px;
+  height: 52px;
+  color: $white;
+  background-color: $tiffany;
+  border: none;
+  font-size: 17px;
+  line-height: 16px;
+  font-family: $fontFamily;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}
