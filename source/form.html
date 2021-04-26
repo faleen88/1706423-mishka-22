@@ -12,9 +12,9 @@
   <body class="page__body">
 
     <header class="page-header">
-      <nav class="main-nav main-nav--open">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__container">
-          <div class="main-nav__logo" id="main-nav__logo">
+          <div class="main-nav__logo">
             <a class="main-nav__logo-link" href="index.html">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
@@ -25,25 +25,25 @@
           </div>
           <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-nav">
-            <li class="site-nav__item site-nav__item--catalog">
+            <li class="site-nav__item">
               <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-nav__item site-nav__item--order">
-              <a class="site-nav__link">Вязание на заказ</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active">Вязание на заказ</a>
             </li>
-            <li class="site-nav__item site-nav__item--new">
+            <li class="site-nav__item site-nav__item--hidden">
               <a class="site-nav__link" href="#">
                 Новые поступления
               </a>
             </li>
-            <li class="site-nav__item site-nav__item--sale">
+            <li class="site-nav__item site-nav__item--hidden">
               <a class="site-nav__link" href="#">
                 Распродажа
               </a>
             </li>
           </ul>
           <ul class="main-nav__list user-nav">
-            <li class="user-nav__item user-nav__item--search">
+            <li class="user-nav__item user-nav__item--special">
               <a class="user-nav__link" href="#">
                 <svg class="user-nav__icon" width="18" height="18">
                   <use xlink:href="icons.svg#search"></use>
@@ -51,12 +51,12 @@
                 <span class="user-nav__link-text">Поиск по сайту</span>
               </a>
             </li>
-            <li class="user-nav__item user-nav__item--basket">
+            <li class="user-nav__item user-nav__item">
               <a class="user-nav__link" href="#">
                 <svg class="user-nav__icon" width="21" height="18">
                   <use xlink:href="icons.svg#cart"></use>
                 </svg>
-                Корзина: пока пуста
+                <span class="user-nav__link-text">Корзина: пока пуста</span>
               </a>
             </li>
           </ul>
@@ -238,6 +238,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/navigation.js"></script>
 
   </body>
 </html>

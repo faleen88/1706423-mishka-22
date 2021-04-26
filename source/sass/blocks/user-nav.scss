@@ -5,7 +5,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     display: grid;
-    grid-template-columns: 82px 1fr;
+    grid-template-columns: 84px 1fr;
     width: 350px;
     height: 88px;
   }
@@ -22,31 +22,23 @@
 
   @media (min-width: $tablet-width) {
     border-top: none;
+    padding: 0;
+    padding-top: 33px;
+    padding-bottom: 31px;
+    text-align: end;
 
-    &--search {
-      width: 82px;
-      padding: 0;
-      padding-top: 36px;
+    &--special {
       border-right: 1px solid $lightgrey;
       border-left: 1px solid $lightgrey;
-    }
 
-    .user-nav__link-text {
-      display: none;
-    }
-
-    &--basket {
-      padding: 0;
-      padding-top: 33px;
-      padding-bottom: 31px;
-      text-align: end;
+      .user-nav__link-text {
+        display: none;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
-    &--basket {
-      padding: 32.5px 0 31.5px 75px;
-    }
+    padding: 32.5px 0 31.5px 75px;
   }
 }
 
