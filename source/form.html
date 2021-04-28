@@ -75,70 +75,78 @@
       <h2 class="visually-hidden">Форма заказа</h2>
 
       <form class="order-form" method="GET" action="https://echo.htmlacademy.ru">
-        <div class="order-form-wrapper">
-          <p class="order-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="order-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-          <fieldset class="order-form__item filter-type">
-            <h3 class="filter-type__title title-style">Тип</h3>
-            <ul class="filter-type__list">
-              <li class="filter-type__item">
-                <label class="filter-radio">
-                  <input class="visually-hidden filter-radio__input" type="radio" name="product-type" value="interior-accessories" checked>
-                  <span class="filter-radio__text">Аксессуар для интерьера</span>
-                </label>
-              </li>
-              <li class="filter-type__item">
-                <label class="filter-radio">
-                  <input class="visually-hidden filter-radio__input" type="radio" name="product-type" value="children-toy">
-                  <span class="filter-radio__text">Детская игрушка</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+        <fieldset class="order-form__item filter-type">
+          <div class="container">
+            <div class="filter-type__grid">
+              <h3 class="filter-type__title title-style">Тип</h3>
+              <ul class="filter-type__list">
+                <li class="filter-type__item">
+                  <label class="filter-radio">
+                    <input class="visually-hidden filter-radio__input" type="radio" name="product-type" value="interior-accessories" checked>
+                    <span class="filter-radio__text">Аксессуар для интерьера</span>
+                  </label>
+                </li>
+                <li class="filter-type__item">
+                  <label class="filter-radio">
+                    <input class="visually-hidden filter-radio__input" type="radio" name="product-type" value="children-toy">
+                    <span class="filter-radio__text">Детская игрушка</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </fieldset>
 
-          <fieldset class="order-form__item filter-color">
-            <h3 class="filter-color__title title-style">Цвет</h3>
-            <ul class="filter-color__list">
-              <li class="filter-color__item">
-                <label class="filter-checkbox">
-                  <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-1" checked>
-                  <span class="filter-checkbox__text">Белый</span>
-                </label>
-              </li>
-              <li class="filter-color__item">
-                <label class="filter-checkbox">
-                  <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-2" checked>
-                  <span class="filter-checkbox__text">Серый</span>
-                </label>
-              </li>
-              <li class="filter-color__item">
-                <label class="filter-checkbox">
-                  <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-3">
-                  <span class="filter-checkbox__text">«Тиффани»</span>
-                </label>
-              </li>
-              <li class="filter-color__item">
-                <label class="filter-checkbox">
-                  <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-4">
-                  <span class="filter-checkbox__text">Черный</span>
-                </label>
-              </li>
-              <li class="filter-color__item">
-                <label class="filter-checkbox">
-                  <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-5">
-                  <span class="filter-checkbox__text">Розовый</span>
-                </label>
-              </li>
-              <li class="filter-color__item">
-                <label class="filter-checkbox">
-                  <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-6">
-                  <span class="filter-checkbox__text">Оранжевый</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+        <fieldset class="order-form__item filter-color">
+          <div class="container">
+            <div class="filter-color__grid">
+              <h3 class="filter-color__title title-style">Цвет</h3>
+              <ul class="filter-color__list">
+                <li class="filter-color__item">
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-1" checked>
+                    <span class="filter-checkbox__text">Белый</span>
+                  </label>
+                </li>
+                <li class="filter-color__item">
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-2" checked>
+                    <span class="filter-checkbox__text">Серый</span>
+                  </label>
+                </li>
+                <li class="filter-color__item">
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-3">
+                    <span class="filter-checkbox__text">«Тиффани»</span>
+                  </label>
+                </li>
+                <li class="filter-color__item">
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-4">
+                    <span class="filter-checkbox__text">Черный</span>
+                  </label>
+                </li>
+                <li class="filter-color__item">
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-5">
+                    <span class="filter-checkbox__text">Розовый</span>
+                  </label>
+                </li>
+                <li class="filter-color__item">
+                  <label class="filter-checkbox">
+                    <input class="visually-hidden filter-checkbox__input" type="checkbox" name="color-6">
+                    <span class="filter-checkbox__text">Оранжевый</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </fieldset>
 
-          <fieldset class="order-form__item data">
+        <fieldset class="order-form__item data">
+          <div class="container">
             <div class="data__name">
               <h3 class="data__title title-style">ФИО</h3>
               <ul class="data__list">
@@ -156,9 +164,11 @@
                 </li>
               </ul>
             </div>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="order-form__item data">
+        <fieldset class="order-form__item data data--bg">
+          <div class="container">
             <div class="data__phone">
               <h3 class="data__title title-style">Тел</h3>
               <label class="visually-hidden" for="phone">Телефон</label>
@@ -167,9 +177,11 @@
                 <use xlink:href="icons.svg#phone"></use>
               </svg>
             </div>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="order-form__item data">
+        <fieldset class="order-form__item data data--bg">
+          <div class="container">
             <div class="data__post">
               <h3 class="data__title title-style">E-mail</h3>
               <label class="visually-hidden" for="e-mail">E-mail</label>
@@ -178,14 +190,20 @@
                 <use xlink:href="icons.svg#post"></use>
               </svg>
             </div>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="order-form__item comment">
-            <h3 class="comment__title title-style">Доп</h3>
-            <label class="visually-hidden" for="comment">Ваш комментарий</label>
-            <textarea class="comment__text" id="comment" name="comment" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
+        <fieldset class="order-form__item comment">
+          <div class="container">
+            <div class="comment__grid">
+              <h3 class="comment__title title-style">Доп</h3>
+              <label class="visually-hidden" for="comment">Ваш комментарий</label>
+              <textarea class="comment__text" id="comment" name="comment" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+          </div>
+        </fieldset>
 
+        <div class="container">
           <div class="order-form__dispatch">
             <p class="order-form__footnote">*Поля обязательны для заполнения</p>
             <button class="order-form__button button" type="submit"><span class="button__text">Отправить заказ</span></button>

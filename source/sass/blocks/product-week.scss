@@ -1,11 +1,8 @@
-.product-week {
-  position: relative;
-}
-
 .product-week__container {
   width: 260px;
   margin: 0 auto;
   padding: 31px 30px 43px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 668px;

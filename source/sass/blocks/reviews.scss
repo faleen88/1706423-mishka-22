@@ -1,11 +1,8 @@
-.reviews {
-  position: relative;
-}
-
 .reviews__container {
   width: 260px;
   margin: 0 auto;
   padding: 32px 30px 52px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 668px;
