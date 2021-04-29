@@ -4,11 +4,11 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    height: 226px;
+    min-height: 226px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 254px;
+    min-height: 254px;
   }
 }
 

@@ -80,13 +80,14 @@
 }
 
 .product__order {
-  padding-top: 26px;
+  padding-top: 22px;
   position: relative;
   font-size: 15px;
   color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+    padding-top: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,6 +123,9 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
   .product__button-icon {
     opacity: 0.2;

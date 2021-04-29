@@ -150,7 +150,7 @@
     opacity: 0.3;
   }
 
-  .reviews__btn-prev {
+  &--prev {
     content: "";
     position: absolute;
     top: 13px;
@@ -165,7 +165,7 @@
     }
   }
 
-  .reviews__btn-prev::after {
+  &--prev::after {
     content: "";
     position: absolute;
     top: -13px;
@@ -179,7 +179,7 @@
     }
   }
 
-  .reviews__btn-next {
+  &--next {
     content: "";
     position: absolute;
     top: 13px;
