@@ -80,10 +80,6 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     margin-bottom: 63px;
-
-    br {
-      display: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -150,7 +146,7 @@
     opacity: 0.3;
   }
 
-  &--prev {
+  &--prev::before {
     content: "";
     position: absolute;
     top: 13px;
@@ -168,8 +164,8 @@
   &--prev::after {
     content: "";
     position: absolute;
-    top: -13px;
-    left: 90px;
+    top: 0;
+    left: 50%;
     background-color: $lightgrey;
     width: 1px;
     height: 50px;
@@ -179,7 +175,7 @@
     }
   }
 
-  &--next {
+  &--next::before {
     content: "";
     position: absolute;
     top: 13px;

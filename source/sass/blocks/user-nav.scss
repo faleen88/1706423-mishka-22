@@ -66,6 +66,15 @@
     }
   }
 
+  &:focus {
+    opacity: 0.6;
+
+    .user-nav__icon {
+      opacity: 1;
+      fill: $tiffany;
+    }
+  }
+
   &:active {
     opacity: 0.3;
 

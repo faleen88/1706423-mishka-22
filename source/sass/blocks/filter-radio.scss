@@ -11,6 +11,12 @@
     }
   }
 
+  &:focus-within {
+    .filter-radio__text::before {
+      outline: 2px solid $special-tiffany;;
+    }
+  }
+
   &:active {
     .filter-radio__text::before {
       border: 2px solid rgba(0, 0, 0, 0.3);

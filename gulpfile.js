@@ -13,6 +13,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
+const csscomb = require("gulp-csscomb");
 
 // Styles
 
@@ -25,6 +26,8 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
+    .pipe(csscomb())
+    .pipe(gulp.dest("build/css"))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -45,6 +48,7 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src("source/js/*.js")
+    .pipe(gulp.dest("build/js"))
     .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))

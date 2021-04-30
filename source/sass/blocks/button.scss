@@ -16,6 +16,11 @@
     background-color: $darkgrey;
   }
 
+  &:focus {
+    color: $white;
+    background-color: $darkgrey;
+  }
+
   &:active .button__text {
     opacity: 0.3;
   }
