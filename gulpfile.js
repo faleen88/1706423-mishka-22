@@ -26,7 +26,30 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(csscomb())
+    .pipe(csscomb({
+      "remove-empty-rulesets": true,
+      "always-semicolon": true,
+      "color-case": "lower",
+      "block-indent": "    ",
+      "color-shorthand": false,
+      "element-case": "lower",
+      "eof-newline": true,
+      "leading-zero": true,
+      "quotes": "double",
+      "space-before-colon": "",
+      "space-after-colon": " ",
+      "space-before-combinator": " ",
+      "space-after-combinator": " ",
+      "space-between-declarations": "\n",
+      "space-before-opening-brace": " ",
+      "space-after-opening-brace": "\n",
+      "space-after-selector-delimiter": " ",
+      "space-before-selector-delimiter": "",
+      "space-before-closing-brace": "\n",
+      "strip-spaces": true,
+      "tab-size": true,
+      "vendor-prefix-align": true
+    }))
     .pipe(gulp.dest("build/css"))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))

@@ -1,6 +1,6 @@
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
-const orderLink = document.querySelector('.button-order');
+const orderLink = document.querySelectorAll('.button-order');
 const modalPopup = document.querySelector('.modal');
 const closePopup = document.querySelector('.form-choice__button');
 
@@ -16,10 +16,12 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-orderLink.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modalPopup.classList.add('modal-show');
-});
+for (let i = 0; i < orderLink.length; i++) {
+  orderLink[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalPopup.classList.add('modal-show');
+  })
+};
 
 closePopup.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -33,4 +35,35 @@ window.addEventListener("keydown", function (evt) {
       modalPopup.classList.remove("modal-show");
     }
   }
+});
+
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+      center: [59.938635, 30.323118],
+      zoom: 16
+  }, {
+      searchControlProvider: 'yandex#search'
+  }),
+
+  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  ),
+
+  myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'ул. Большая Конюшенная, д. 19/8, офис 101',
+      balloonContent: [
+        '<div class="map__balloon">',
+        '<img src="../img/mishka-logo-mobile.svg" alt="Логотип магазина">',
+        '<p>Милые штуки ручной работы</p>',
+        '</div>'
+      ].join('')
+  }, {
+      iconLayout: 'default#image',
+      iconImageHref: '../img/map-pin.svg',
+      iconImageSize: [67, 100],
+      iconImageOffset: [-33, -100]
+  })
+
+  myMap.geoObjects
+      .add(myPlacemark);
 });
