@@ -1,11 +1,11 @@
-.filter-type {
+.filter-type__grid {
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: baseline;
-    padding: 50px;
+    padding: 50px 0;
     margin-bottom: 0;
   }
 

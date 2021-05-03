@@ -15,6 +15,10 @@
     fill: $tiffany-hover;
   }
 
+  &:focus {
+    fill: $tiffany-hover;
+  }
+
   &:active {
     opacity: 0.3;
   }

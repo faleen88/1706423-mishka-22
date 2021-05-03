@@ -3,6 +3,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+
+    &--bg {
+      background-color: $special-grey;
+    }
   }
 }
 
@@ -11,12 +15,12 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: baseline;
-    padding: 50px;
+    padding: 50px 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 4fr;
-    padding-right: 225px;
+    padding-right: 175px;
   }
 }
 
@@ -25,14 +29,13 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: baseline;
-    padding: 50px;
+    padding: 50px 0;
     padding-bottom: 24px;
-    background-color: $special-grey;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 4fr;
-    padding-right: 225px;
+    padding-right: 175px;
   }
 }
 
@@ -41,14 +44,14 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: baseline;
-    padding: 50px;
+    padding-bottom: 50px;
     padding-top: 0;
     background-color: $special-grey;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 4fr;
-    padding-right: 225px;
+    padding-right: 175px;
   }
 }
 
@@ -84,6 +87,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
   }
+}
+
+.data__phone,
+.data__post {
+  position: relative;
 }
 
 .data__label {
@@ -160,33 +168,31 @@
 
   &--phone {
     bottom: 17px;
-    right: 10px;
+    right: 8px;
 
     @media (min-width: $tablet-width) {
       bottom: 41px;
       right: 26px;
-      padding-right: 50px;
     }
 
     @media (min-width: $desktop-width) {
       right: 8px;
-      padding-right: 225px;
+      padding-right: 175px;
     }
   }
 
   &--letter {
     bottom: 15px;
-    right: 6px;
+    right: 4px;
 
     @media (min-width: $tablet-width) {
       top: 16px;
       right: 22px;
-      padding-right: 50px;
     }
 
     @media (min-width: $desktop-width) {
       right: 4px;
-      padding-right: 225px;
+      padding-right: 175px;
     }
   }
 }

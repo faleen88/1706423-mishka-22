@@ -1,13 +1,14 @@
 .heading {
   background-color: $special-grey;
+  border-top: 1px solid $lightgrey;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    height: 227px;
+    min-height: 226px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 255px;
+    min-height: 254px;
   }
 }
 
@@ -21,7 +22,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 103px;
+    padding-top: 102px;
   }
 
   @media (min-width: $desktop-width) {
