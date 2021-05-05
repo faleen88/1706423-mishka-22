@@ -87,19 +87,19 @@
                   <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
                   <img class="product__photo" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile.jpg 1x, img/photo-1-mobile@2x.jpg 2x" alt="Вязанная игрушка зайца">
                 </picture>
-                <div class="product__description">
-                  <h3 class="product__title">Зайчик-попрыгайчик</h3>
-                  <span class="product__options">Рост 30 см, вес 200 г</span>
-                  <div class="product__order">
-                    <b class="product__price">1 200 руб.</b>
-                  </div>
+              </a>
+              <div class="product__description">
+                <h3 class="product__title"><a class="product__title-link" href="#">Зайчик-попрыгайчик</a></h3>
+                <span class="product__options">Рост 30 см, вес 200 г</span>
+                <div class="product__order">
+                  <b class="product__price">1 200 руб.</b>
+                  <a class="product__button button-order" href="modal.html" aria-label="Добавить товар в корзину">
+                    <svg class="product__button-icon" width="21" height="18">
+                      <use xlink:href="img/sprite.svg#cart"></use>
+                    </svg>
+                  </a>
                 </div>
-              </a>
-              <a class="product__button button-order" href="modal.html" aria-label="Добавить товар в корзину">
-                <svg class="product__button-icon" width="21" height="18">
-                  <use xlink:href="img/sprite.svg#cart"></use>
-                </svg>
-              </a>
+              </div>
             </li>
             <li class="cards__item product">
               <a class="product__link" href="#">
@@ -111,19 +111,19 @@
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                   <img class="product__photo" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile.jpg 1x, img/photo-2-mobile@2x.jpg 2x" alt="Бело-оранжевая вязаная корзина">
                 </picture>
-                <div class="product__description">
-                  <h3 class="product__title">Корзинка для белья</h3>
-                  <span class="product__options">Диаметр 15 см, высота 10 см</span>
-                  <div class="product__order">
-                    <b class="product__price">690 руб.</b>
-                  </div>
+              </a>
+              <div class="product__description">
+                <h3 class="product__title"><a class="product__title-link" href="#">Корзинка для белья</a></h3>
+                <span class="product__options">Диаметр 15 см, высота 10 см</span>
+                <div class="product__order">
+                  <b class="product__price">690 руб.</b>
+                  <a class="product__button button-order" href="modal.html" aria-label="Добавить товар в корзину">
+                    <svg class="product__button-icon" width="21" height="18">
+                      <use xlink:href="img/sprite.svg#cart"></use>
+                    </svg>
+                  </a>
                 </div>
-              </a>
-              <a class="product__button button-order" href="modal.html" aria-label="Добавить товар в корзину">
-                <svg class="product__button-icon" width="21" height="18">
-                  <use xlink:href="img/sprite.svg#cart"></use>
-                </svg>
-              </a>
+              </div>
             </li>
             <li class="cards__item product">
               <a class="product__link" href="#">
@@ -135,19 +135,19 @@
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                   <img class="product__photo" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile.jpg 1x, img/photo-3-mobile@2x.jpg 2x" alt="Несколько игрушек лежат в бело-зелёной вязаной корзине">
                 </picture>
-                <div class="product__description">
-                  <h3 class="product__title">Большая корзинка для игрушек</h3>
-                  <span class="product__options">Диаметр 30 см, высота 30 см</span>
-                  <div class="product__order">
-                    <b class="product__price">1 500 руб.</b>
-                  </div>
+              </a>
+              <div class="product__description">
+                <h3 class="product__title"><a class="product__title-link" href="#">Большая корзинка для игрушек</a></h3>
+                <span class="product__options">Диаметр 30 см, высота 30 см</span>
+                <div class="product__order">
+                  <b class="product__price">1 500 руб.</b>
+                  <a class="product__button button-order" href="modal.html" aria-label="Добавить товар в корзину">
+                    <svg class="product__button-icon" width="21" height="18">
+                      <use xlink:href="img/sprite.svg#cart"></use>
+                    </svg>
+                  </a>
                 </div>
-              </a>
-              <a class="product__button button-order" href="modal.html" aria-label="Добавить товар в корзину">
-                <svg class="product__button-icon" width="21" height="18">
-                  <use xlink:href="img/sprite.svg#cart"></use>
-                </svg>
-              </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -164,11 +164,9 @@
                 <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-                <img class="product__photo" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Вязанная серо-зелёная корзинка">
+                <img class="video__photo" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Вязанная серо-зелёная корзинка">
               </picture>
-              <button class="video__button-play">
-                <img src="img/play.svg" alt="Кнопка, включающая видео">
-              </button>
+              <button class="video__button-play"></button>
             </div>
             <div class="video__description">
               <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -243,7 +241,7 @@
             <label class="form-choice__label" for="size-l">L</label>
           </li>
         </ul>
-        <button class="form-choice__button button" type="submit" aria-label="Добавить товар в корзину">Добавить</button>
+        <button class="form-choice__button button" type="submit" aria-label="Добавить товар в корзину"><span class="button__text">Добавить</span></button>
       </form>
     </section>
 

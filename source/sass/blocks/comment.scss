@@ -19,6 +19,10 @@
 .comment__title {
   margin-bottom: 22px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 62px;
   }
@@ -26,13 +30,13 @@
 
 .comment__text {
   border: 2px solid $darkgrey;
-  width: 222px;
-  min-height: 104px;
+  width: 224px;
+  height: 105px;
   resize: none;
   font-size: 17px;
   line-height: 18px;
   font-family: $fontFamily;
-  padding: 16px 17px;
+  padding: 16px;
 
   &:hover {
     border: 2px solid $special-tiffany;
@@ -47,6 +51,7 @@
     width: 90%;
     color: $black;
     opacity: 0.3;
+    line-height: 18px;
 
     @media (min-width: $tablet-width) {
       padding: 0;
@@ -54,11 +59,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 462px;
+    width: 465px;
     font-size: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 661px;
+    width: 664px;
   }
 }

@@ -181,8 +181,8 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__container">
-          <div class="contacts__grid">
+        <div class="contacts__grid">
+          <div class="contacts__container">
             <h2 class="contacts__title">Контакты</h2>
             <dl class="contacts__list">
               <div class="contacts__item">
@@ -194,11 +194,17 @@
                 <dd class="contacts__value">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</dd>
               </div>
             </dl>
-            <div class="contacts__map-bg">
-              <div class="contacts__map-pin" id="map">
-                <div class="map" id="map"></div>
+          </div>
+
+          <div class="contacts__map map" id="map">
+            <div class="contacts__container">
+              <div class="contacts__map-bg">
+                <div class="contacts__map-pin"></div>
               </div>
             </div>
+          </div>
+
+          <div class="contacts__container">
             <a class="contacts__button button" href="#"><span class="button__text">Напишите нам</span></a>
           </div>
         </div>
@@ -269,7 +275,7 @@
             <label class="form-choice__label" for="size-l">L</label>
           </li>
         </ul>
-        <button class="form-choice__button button" type="submit" aria-label="Добавить товар в корзину">Добавить</button>
+        <button class="form-choice__button button" type="submit" aria-label="Добавить товар в корзину"><span class="button__text">Добавить</span></button>
       </form>
     </section>
 

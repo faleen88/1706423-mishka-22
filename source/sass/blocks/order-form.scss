@@ -45,7 +45,7 @@
 
   .order-form__button {
     width: 260px;
-    height: 52px;
+    min-height: 52px;
     margin-bottom: 56px;
     font-size: 17px;
     line-height: 16px;
@@ -54,7 +54,6 @@
 
     @media (min-width: $tablet-width) {
       width: 230px;
-      height: 52px;
       margin-bottom: 50px;
     }
   }

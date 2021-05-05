@@ -28,42 +28,43 @@ closePopup.addEventListener('click', function (evt) {
   modalPopup.classList.remove('modal-show');
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (modalPopup.classList.contains("modal-show")) {
+    if (modalPopup.classList.contains('modal-show')) {
       evt.preventDefault();
-      modalPopup.classList.remove("modal-show");
+      modalPopup.classList.remove('modal-show');
     }
   }
 });
 
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
-      center: [59.938635, 30.323118],
-      zoom: 16
+    center: [59.938635, 30.323118],
+    zoom: 16,
+    behaviors: ['drag']
   }, {
-      searchControlProvider: 'yandex#search'
+    searchControlProvider: 'yandex#search'
   }),
 
   MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
   ),
 
   myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-      hintContent: 'ул. Большая Конюшенная, д. 19/8, офис 101',
-      balloonContent: [
-        '<div class="map__balloon">',
-        '<img src="../img/mishka-logo-mobile.svg" alt="Логотип магазина">',
-        '<p>Милые штуки ручной работы</p>',
-        '</div>'
-      ].join('')
+    hintContent: 'ул. Большая Конюшенная, д. 19/8, офис 101',
+    balloonContent: [
+      '<div class="map__balloon">',
+      '<img src="../img/mishka-logo-mobile.svg" alt="Логотип магазина">',
+      '<p>Милые штуки ручной работы</p>',
+      '</div>'
+    ].join('')
   }, {
-      iconLayout: 'default#image',
-      iconImageHref: '../img/map-pin.svg',
-      iconImageSize: [67, 100],
-      iconImageOffset: [-33, -100]
+    iconLayout: 'default#image',
+    iconImageHref: '../img/map-pin.svg',
+    iconImageSize: [67, 100],
+    iconImageOffset: [-33, -100]
   })
 
   myMap.geoObjects
-      .add(myPlacemark);
+    .add(myPlacemark);
 });

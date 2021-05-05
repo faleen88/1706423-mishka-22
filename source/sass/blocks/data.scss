@@ -58,6 +58,10 @@
 .data__title {
   margin-bottom: 5px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 62px;
   }
@@ -133,7 +137,7 @@
 
   &::placeholder {
     font-size: 17px;
-    line-height: 18px;
+    line-height: 46px;
     font-weight: 400;
     font-family: $fontFamily;
     color: $black;
@@ -156,8 +160,18 @@
 }
 
 .data__input--contacts {
+  width: 220px;
+  padding-right: 40px;
+
   @media (min-width: $tablet-width) {
+    width: 424px;
+    padding-right: 60px;
     background-color: $special-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 644px;
+    padding-right: 40px;
   }
 }
 

@@ -1,15 +1,5 @@
 .product {
   position: relative;
-}
-
-.product__link {
-  &:hover .product__description {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  &:active .product__description {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -24,10 +14,18 @@
   border: 1px solid $lightgrey;
   display: flex;
   flex-direction: column;
-  padding: 28px 27px 25px;
+  padding: 28px 21px 25px 27px;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 32px 24px 33px;
+    padding: 26px 26px 24px 33px;
     flex-grow: 1;
     margin-top: 0;
     display: flex;
@@ -36,15 +34,29 @@
 
   @media (min-width: $desktop-width) {
     min-height: 147px;
-    padding: 25px 26px 24px 26px;
+    padding: 26px 26px 23px 26px;
   }
 }
 
 .product__title {
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
+  padding-right: 6px;
   font-size: inherit;
   line-height: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6px;
+    padding-right: 20px;
+  }
+}
+
+.product__title-link {
   color: $black;
 
   &:hover {
@@ -53,15 +65,6 @@
 
   &:active {
     opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    width: 90%;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 6px;
   }
 }
 
@@ -80,18 +83,21 @@
 }
 
 .product__order {
-  padding-top: 22px;
+  padding-top: 17px;
   position: relative;
   font-size: 15px;
   color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
-    padding-top: 26px;
+    padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 25px;
+    align-items: center;
   }
 
   &::before {
@@ -114,9 +120,6 @@
 }
 
 .product__button {
-  position: absolute;
-  bottom: 25px;
-  right: 22px;
   border: none;
   background-color: $white;
   padding: 0;
