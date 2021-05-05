@@ -39,7 +39,7 @@
 .goods__title {
   width: 260px;
   margin: 0 auto;
-  padding: 72px 30px 120px;
+  padding: 72px 30px 121px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -75,12 +75,6 @@
 
 .goods__item {
   position: relative;
-}
-
-.goods__link {
-  padding: 25px 30px 30px;
-  color: $white;
-  display: flex;
 
   &--interior {
     background-color: $tiffany;
@@ -90,18 +84,40 @@
     background-color: $dark-tiffany;
   }
 
+  &--toy:hover,
+  &--toy:active {
+    background-color: $tiffany-hover;
+    margin-top: -5px;
+    padding-bottom: 5px;
+    transition-duration: 0.3s;
+  }
+
+  &--interior:hover,
+  &--interior:active {
+    background-color: #59d5bc;
+    margin-top: -5px;
+    padding-bottom: 5px;
+    transition-duration: 0.3s;
+  }
+}
+
+.goods__link {
+  padding: 25px 30px 30px;
+  color: $white;
+  display: flex;
+
   .goods__icon {
     position: absolute;
     fill: $special-icon;
     opacity: 0.5;
 
     &--interior {
-      right: 36px;
+      right: calc(50% - 125px);
       top: 23px;
     }
 
     &--toy {
-      right: 27px;
+      right: calc(50% - 133px);
       top: 21px;
     }
 
@@ -121,42 +137,12 @@
   &:hover {
     .goods__icon {
       opacity: 0.7;
-
-      @media (min-width: $tablet-width) {
-        margin-top: -5px;
-        padding-bottom: 39px;
-        transition-duration: 0.3s;
-      }
     }
   }
 
   &:active {
     .goods__icon {
       opacity: 0.3;
-    }
-  }
-
-  &--toy:hover,
-  &--toy:active {
-    background-color: $tiffany-hover;
-    margin-top: -5px;
-    padding-bottom: 35px;
-    transition-duration: 0.3s;
-
-    @media (min-width: $tablet-width) {
-      padding-bottom: 39px;
-    }
-  }
-
-  &--interior:hover,
-  &--interior:active {
-    background-color: #59d5bc;
-    margin-top: -5px;
-    padding-bottom: 35px;
-    transition-duration: 0.3s;
-
-    @media (min-width: $tablet-width) {
-      padding-bottom: 39px;
     }
   }
 
@@ -168,6 +154,11 @@
 .goods__subtitle {
   margin: 0;
   font-size: 19px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 260px;
+    margin: 0 auto;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
